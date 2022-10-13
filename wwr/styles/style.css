@@ -61,6 +61,7 @@ nav a:hover {
     background-color: #072536;
     color: #de943f;
     padding: 35px;
+    margin-top: 50px;
 }
 footer {
     background-color: #3e3e3e;
@@ -122,11 +123,14 @@ footer .social img {
     padding-top: 15px;
 }
 .rivers-card, .camping-card, .rapids-card {
-    max-width: 200px 0;
+    margin: 200px 0;
 }
 .card-img {
     border: 10px solid #072536;
 }
 main section img {
     box-sizing: border-box;
+}
+.mountains {
+    margin: 75px 0;
 }
