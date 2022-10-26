@@ -30,9 +30,11 @@ nav a {
 #hero-msg h4 {
     color: #eceae8;
     padding-bottom: 15px;
+    font-size: 1em;
 }
 #hero-msg h1 {
     color: #db9a50;
+    font-size: 3em;
 }
 #hero-msg {
     grid-column: 2/3;
