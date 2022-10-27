@@ -135,13 +135,14 @@ body {
     display: grid;
     justify-content: center;
     padding-bottom: 25px;
+    
   
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 15%);
     grid-template-rows: 3em 1.5em 1.5em 3em;
     grid-template-areas: ". . home home . ."
       ". . . top . ."
-      "left left middle middle right right"
-      "products products about-us about-us contact contact";
+      ". left left right right ."
+      "products products . . contact contact";
   }
   .sitemap > div {
   
@@ -158,11 +159,7 @@ body {
     background-color: #ccc;
     line-height: 3em;
   }
-  .sm-about-us {
-    grid-area: about-us;
-    background-color: #ccc;
-    line-height: 3em;
-  }
+ 
   .sm-contact {
     grid-area: contact;
     background-color: #ccc;
@@ -185,8 +182,4 @@ body {
     border-top: 1px solid;
     border-right: 1px solid;
   }
-  .middle {
-    grid-area: right;
-    border-top: 1px solid;
-    border-right: 1px solid;
-  }
+ 
