@@ -18,9 +18,9 @@ Fonts are separated by a & */
   --paragraph-font: 'Montserrat', sans-serif, arial;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #F58B00;  /* headlines on a white background */ 
+  --headline-color: #F58B00;  /* headlines on a white background */ 
   --headline-color-on-color: #F2CB07; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #312720; /* paragraph text on a white background */ 
+  --paragraph-color: #312720; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #312720; /* paragraph text on a colored background */ 
   --paragraph-background-color: #819C9A;
   --nav-link-color: #F58B00;
@@ -137,12 +137,12 @@ body {
     padding-bottom: 25px;
     
   
-    grid-template-columns: repeat(6, 15%);
+    grid-template-columns: repeat(8, 12%);
     grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas: ". . home home . ."
-      ". . . top . ."
-      ". left left right right ."
-      "products products . . contact contact";
+    grid-template-areas: ". . . home home . . ."
+      ". . . . top . . ."
+      ". left left center1 center2 right right ."
+      "products products . about_us about_us . contact contact";
   }
   .sitemap > div {
   
@@ -151,18 +151,23 @@ body {
   }
   .sm-home {
     grid-area: home;
-    background-color: #ccc;
+    background-color: #999;
     line-height: 3em;
   }
   .sm-products {
     grid-area: products;
-    background-color: #ccc;
+    background-color: #999;
     line-height: 3em;
   }
  
+  .sm-about_us {
+    grid-area: about_us;
+    background-color: #999;
+    line-height: 3em;
+  }
   .sm-contact {
     grid-area: contact;
-    background-color: #ccc;
+    background-color: #999;
     line-height: 3em;
   }
   
@@ -176,7 +181,16 @@ body {
     border-top: 1px solid;
     border-left: 1px solid;
   }
+  .center1 {
+    grid-area: center1;
+    border-top: 1px solid;
   
+  }
+  .center2 {
+    grid-area: center2;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
   .right {
     grid-area: right;
     border-top: 1px solid;
