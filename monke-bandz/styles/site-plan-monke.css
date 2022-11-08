@@ -196,4 +196,20 @@ body {
     border-top: 1px solid;
     border-right: 1px solid;
   }
+  .sadie-img, .lrg-wristband {
+    max-width: 900px;
+    padding: 20px;
+  }
+  .dna-img, .dusty-img, .keychain-img {
+    max-width: 500px;
+    padding: 20px;
+  }
+  .first-img, .now-img {
+    max-width: 400px;
+    padding: 20px;
+  }
+  .fire-ice-img {
+    max-width: 600px;
+    padding: 20px;
+  }
  
