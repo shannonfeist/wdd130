@@ -259,8 +259,6 @@ main section img {
     .salmon, .gray, .grand {
         display: inline;
         border: none;
-        background-color: none;
-        border-radius: none;
     }
 }
 /* Start of River Page */
