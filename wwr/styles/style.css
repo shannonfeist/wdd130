@@ -233,7 +233,7 @@ main section img {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, .camping-card, .rapids-card, .river-img { 
         margin: 50px auto;
         width: 60%;
     }
@@ -248,5 +248,102 @@ main section img {
     footer {
         margin-top: 25px;
     }
+    .rivers-main {
+        background-color: #072536;
+        margin: 0 auto;
+    }
+    .rivers-main p {
+        width: 80%;
+        font-size: .75em;
+    }
+    .salmon, .gray, .grand {
+        display: inline;
+        border: none;
+        background-color: none;
+        border-radius: none;
+    }
 }
-           
+/* Start of River Page */
+.rivers-main {
+    display: block;
+}
+.salmon, .gray, .grand {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 21fr 1fr;
+    background-color: #072536;
+    margin: 50px 0px;
+    border-radius: 15px;
+}
+.rivers-main p {
+    font-family: 'Montserrat', 'Encode Sans Condensed', arial;
+    color: #D4D4C4;
+    text-align: left;
+    padding: 0 25px 25px 25px;
+    letter-spacing: .15em;
+}
+.rivers-main h2 {
+    height: auto;
+    font-family: 'Caveat Brush', 'Indie Flower', sans-serif;
+    color: #db9a50;
+    letter-spacing: .05em;
+}
+.river-img {
+    width: 100%;
+    height: auto;
+    margin: 50px 0px;
+    border: 3px solid #072536;
+    outline-width: 5px;
+    outline-style: outset;
+    outline-color: #40484b;
+}
+.salmon h2 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+
+}
+.salmon img {
+    grid-column: 2/3;
+    grid-row: 2/7;
+}
+.salmon p {
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+.gray h2 {
+    grid-column: 4/5;
+    grid-row: 8/9;
+}
+.gray img {
+    grid-column: 2/3;
+    grid-row: 8/13;
+}
+.gray p {
+    grid-column: 4/5;
+    grid-row: 9/11;
+}
+.grand h2 {
+    grid-column: 4/5;
+    grid-row: 12/13;
+}
+.grand img {
+    grid-column: 2/3;
+    grid-row: 12/17;
+}
+.grand p {
+    grid-column: 4/5;
+    grid-row: 13/15;   
+}
+.river-footer {
+    margin-top: 50px;
+}
+.river-header {
+    background-color: #072536;
+}
+.river-header nav a {
+    background-color: #072536;
+    color: #db9a50;
+}
+.river-header nav a:hover {
+    background-color: #db9a50;
+    color: #072536;
+}
