@@ -277,13 +277,13 @@ main section img {
     color: #D4D4C4;
     text-align: left;
     padding: 0 25px 25px 25px;
-    letter-spacing: .15em;
+    letter-spacing: 2px;
 }
 .rivers-main h2 {
     height: auto;
     font-family: 'Caveat Brush', 'Indie Flower', sans-serif;
     color: #db9a50;
-    letter-spacing: .05em;
+    letter-spacing: 1px;
 }
 .river-img {
     width: 100%;
