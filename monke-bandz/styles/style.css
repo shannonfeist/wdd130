@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda:wght@400;700&family=Montserrat&display=swap');
+
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body {
+    background-color: #eafdcf;
+    color: #625555;
+    font-family: 'Montserrat', 'Encode Sans Condensed', arial;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    width: 1600px auto;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+.header-background {
+    grid-column: 1/15;
+    grid-row: 1/4;
+}
+.background-img {
+    box-sizing: border-box;
+    max-width: 1600px;
+    min-width: 100%;
+    min-height: 100%;
+}
+.logo {
+    opacity: .95;
+    margin: 25px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+nav a {
+    color: #211a4f;
+    background-color: #fffdc2;
+    text-decoration: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-family: 'Merienda', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    border-radius: 15px;
+}
+nav a:hover {
+    color: #fffdc2;
+    background-color: #2e294e;
+}
+
+.logo {
+    align-content: center;
+    grid-column: 4/12;
+    grid-row: 1/2;
+}
+header nav {
+    grid-column: 3/13;
+    grid-row: 2/3;
+}
+.main-img, .fire-ice-img {
+    max-width: 1600px;
+}
+footer {
+    background-color: #1b2328;
+    color: #f6f6f3;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer h3 {
+    color: #f6f6f3;
+    font-size: 1.2em;
+}
+footer a {
+    color: #f6f6f3;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #de943f;
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+
+/* products page begin */
+
+.products-img {
+    max-width: 1600px;
+    height: auto;
+    margin-top: 50px;
+}
+.collar-img, .wristband-img, .keychain-img {
+    width: 400px;
+}
+.christian-img {
+    width: 800px;
+}
+.bio-img {
+    width: 400px;
+}

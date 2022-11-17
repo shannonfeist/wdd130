@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paracord Creations</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="header-background">
+                <img class="background-img" src="images/fi_background.jpg" class="w3-opacity" alt="Background Image">
+            </div>
+            <div class="logo">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/MonkeBandz-logo1.png" alt="MonkeBandz Logo">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>            
+        </header>
+        <main>
+            <div>
+                <img class="products-img" src="images/two-women-in-a-tent-2.jpg" alt="camping image">
+            </div>
+            <div class="product-grid">
+                <h1 class="products">Products</h1>
+                <p>
+                    Take a look at the different styles. Pick the colors you love. Select the size.
+                </p>
+                <div class="collar-card">
+                    <h2>Pet Collars</h2>
+                    <img class="collar-img" src="images/dusty_inside.jpg" alt="Image Pet Collar">
+                    <p class="collarz-text">
+                        These pet collars are made of 550 paracord. It is lightweight but extremely sturdy. Your fur babies will be stylish and safe in one of our MonkeBandz collars.
+                    </p>
+                    <button class="collar-button">Colors and Sizes</button>
+                </div>
+                <div class="wristband-card">
+                    <h2>Wristbands & Earrings</h2>
+                    <img class="wristband-img" src="images/dna-earrings-2.jpg" alt="Image earringz">
+                    <p class="wristband-text">
+                        Choose from three styles. The large wristband made from 550 paracord is a chunky fun wristband. If you are looking for a wristband to wear while hiking and camping for survival, this is the right choice. The medium wristband is made from 95 paracord but with more strands. If you're not sure which style, this is a nice middle of the road option. Pick your favorite color combinations. The small wristband is made of the 95 paracord. It is lightweight and petite, perfect for anyone who likes a minimal look. Want more impact? Buy multiple Wristbands and wear them together. The Earrings are delicate and lightweight. Great option for work or a night out. For a fun and casual look, choose some of our vibrant colors.
+                    </p>
+                    <button class="wristband-button">Colors and Sizes</button>
+                </div>
+                <div class="keychain-card">
+                    <h2>Key-chains</h2>
+                    <img class="keychain-img" src="images/keychains-2.jpg" alt="Image keychain">
+                    <p class="keychain-text">
+                        Do you lose your keys? Tired of reaching in your bag and struggling to fish out your keys? The DNA key-chain will give you a hand. They are made of 550 paracord so they are made to last.
+                    </p>
+                      
+                    <div>
+                        <button id="keychain-button">Colors & Styles</button>
+                    </div>
+                      
+                </div>
+            </div>
+            <div id="order-overlay" onclick="off()">
+                <div id="order-form">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="item">Item Name</label>
+                        <input type="text" id="item" name="itemname" placeholder="Item Name...">
+
+                        <label for="style">Style</label>
+                        <input type="text" id="style" name="stylename" placeholder="Style..">
+
+                        <label for="size">Size</label>
+                        <input type="text" id="size" name="itemsize" placeholder="Item Size..">
+                    
+                        <label for="instructions">Additional Instructions</label>
+                        <textarea id="subject" name="instructions" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    
+                    </form>
+                </div>
+            </div>
+              
+            <div style="padding:20px">
+                <button onclick="on()">Order Here</button>
+            </div>
+              
+            <script>
+            function on() {
+                document.getElementById("order-overlay").style.display = "block";
+            }
+              
+            function off() {
+                document.getElementById("order-overlay").style.display = "none";
+            }
+            </script>
+        </main>
+            
+        <footer>
+            <p>Up A Creek &copy; 2022 - Shannon Feist</p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>        
+        </footer>
+    </div>
+</body>
+</html>

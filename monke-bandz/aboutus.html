@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paracord Creations</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="header-background">
+                <img class="background-img" src="images/fi_background.jpg" class="w3-opacity" alt="Background Image">
+            </div>
+            <div class="logo">
+                <a id="logo_link" href="index.html">
+                    <img class="logo" src="images/MonkeBandz-logo1.png" alt="MonkeBandz Logo">
+                </a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>            
+        </header>
+        <main class="about-main">
+            <section class="owner-bio">
+                <h1 class="about-title" >Who We Are</h1>
+                <h2 class="name">Christian</h2>
+                <img class="christian-img" src="images/Christian-2.jpg" alt="image of Christian">
+                <img class="bio-img" src="images/first_bracelets-2.jpg" alt="">
+                <p class="bio-msg">Christian is the founder and owner of MonkeBandz. He was born in Beaver county Pennsylvania. His family moved to central Pennsylvania, near Harrisburg, when he was four years old. His love for baseball and the outdoors flourished in the beautiful countryside he called home. He learned responsibility and hard work as he helped care for animals and tend the garden on his family's small farm. His love for baseball led him to play on several travel teams, but he found a home with the Keystone Nationals. He learned many life lessons from his time playing with them. The slogan "Do Your Job" was on the sleave of every player's uniform. Christian was a Cub Scout and Boy Scout. He loves learning about nature and survival skills. It was during one of his Cub Scout day camps that he first learned about paracord crafts and their survival benefits. He made his first wristband and found he had quite a knack for it. He has continued to make those wristbands and expanded his knowledge to other items. Christian is now sixteen years old. He enjoys serving others and anything that is active. He is currently working on perfecting his pickleball game so he can beat his Uncle Mark at the next family reunion. He attends early morning seminary where he studies the scriptures and is saving money so he can serve a mission when he turns 18.</p>
+            </section>
+            <div id="contact-overlay" onclick="off()">
+                <div id="contact-form">
+                    <form action="action_page.php">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    
+                      </form>
+                </div>
+            </div>
+              
+            <div style="padding:20px">
+                <button onclick="on()">Contact Us</button>
+            </div>
+              
+            <script>
+            function on() {
+                document.getElementById("contact-overlay").style.display = "block";
+            }
+              
+            function off() {
+                document.getElementById("contact-overlay").style.display = "none";
+            }
+            </script>
+        </main>
+        <footer>
+            <p>Up A Creek &copy; 2022 - Shannon Feist</p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>        
+        </footer>
+    </div>
+</body>
+</html>
