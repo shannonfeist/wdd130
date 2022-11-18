@@ -182,7 +182,7 @@ body {
     max-width: 900px;
     padding: 20px;
   }
-  .dna-img, .dusty-img, .keychain-img {
+  .earring-img, .dusty-img, .keychain-img {
     max-width: 500px;
     padding: 20px;
   }
@@ -190,8 +190,11 @@ body {
     max-width: 400px;
     padding: 20px;
   }
-  .fire-ice-img {
+  .camping-img {
     max-width: 600px;
     padding: 20px;
   }
- 
+ .background-img {
+    width: 900px;
+    height: auto;
+ }
