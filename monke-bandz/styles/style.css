@@ -6,8 +6,8 @@
     margin: 0 auto;
 }
 body {
-    background-color: #eafdcf;
-    color: #625555;
+    background-color: #2e294e;
+    color: #f6f6f3;
     font-family: 'Montserrat', 'Encode Sans Condensed', arial;
     font-size: 22px;
     margin: 0;
@@ -26,6 +26,7 @@ header {
     grid-row: 1/4;
 }
 .background-img {
+    border: 3px solid #221e1e;
     box-sizing: border-box;
     max-width: 1600px;
     min-width: 100%;
@@ -42,7 +43,7 @@ nav {
 }
 nav a {
     color: #211a4f;
-    background-color: #fffdc2;
+    background-color: #fffc99;
     text-decoration: none;
     padding: 15px 25px;
     text-align: center;
@@ -52,7 +53,7 @@ nav a {
     border-radius: 15px;
 }
 nav a:hover {
-    color: #fffdc2;
+color: #b1f8f2;
     background-color: #2e294e;
 }
 
@@ -66,70 +67,52 @@ header nav {
     grid-row: 2/3;
 }
 .intro h1 {
-    font-family: sans-serif;
-    color: #2e294e;
+    font-family: 'Merienda', 'san-serif';
     font-size: 2.25em;
     margin-bottom: 0;
-}
-
-.intro-sub {
-    margin-top: 5px;
-    font-family: 'Merienda', 'san-serif';
-    font-size: 1.5em;
     color: #b1f8f2;
     text-shadow: 0 0 4px #134542, 0 0 6px #b2e5e1;
 }
-.intro-grid {
-    margin-top: 75px;
-    box-sizing: border-box;
-    max-width: 1600px;
-    min-width: 100%;
-    min-height: 100%;
-    display: grid;
-    grid-template-columns: 50px 3fr 1fr 2fr 3fr 50px;
-}
-.intro-img {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    grid-column: 2/5;
-    grid-row: 1/8;
-    border: 3px solid #2e294e;
-    box-shadow: 10px 10px 10px #625555;
+.intro-sub {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', 'san-serif';
+    color: #f6f6f3;
+    text-shadow: 0 0 4px #134542, 0 0 6px #b2e5e1;
 }
 .intro-msg {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    grid-column: 4/6;
-    grid-row: 2/7;
-    background-color: #fffdc2;
-    border: 4px ridge #625555;
-    box-shadow: 10px 10px 10px #4f4e3c;
-    padding: 25px;
+    padding: 25px 150px 10px 150px;
     letter-spacing: .5px;
-    font-weight: 600;
+    
 }
 .title {
-    margin-top: -5px;
-    color: #2e294e;
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'Merienda', sans-serif;
-
+    font-size: 1.5em;
+    padding-top: 35px;
+    color: #b1f8f2;
+    text-shadow: 0 0 4px #134542, 0 0 6px #b2e5e1;
 }
 .intro-msg p {
-    text-align: left;
+    
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
 .description {
-    border: 2px solid black;
+    box-sizing: border-box;
     max-width: 1600px;
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
 .desc-img {
+    border: 3px solid #221e1e;
     box-sizing: border-box;
     grid-column: 1/4;
     grid-row: 1/6;
@@ -137,23 +120,24 @@ header nav {
     height: 100%;
 }
 .home-list {
-    box-sizing: border-box;
     margin: auto;
+    width: 100%;
+    height: auto;
     text-align: left;
-    background-color: rgb(65, 64, 64); opacity:.95;
     grid-column: 1/4;
-    grid-row: 1/6;
-    font-family: sans-serif;
-    font-size: 36px;
-    color: #b1f8f2;
-    padding: 25px 100px 25px 80px;
-    line-height: 1.5em;
+    grid-row: 1/4;
+    font-family: 'Merienda', sans-serif;
+    font-size: 1.7em;
+    padding-left: 50px;
+    padding-top: 5px;
+    line-height: 2.5em;
     border-radius: 15px;
-    text-shadow: 0 0 4px #134542, 0 0 6px #b2e5e1;
+    color: #f6f6f3;
+    text-shadow: 0 0 4px #303b21, 0 0 6px #def0c5;
 }
 
 footer {
-    background-color: #1b2328;
+    background-color: #25343d;
     color: #f6f6f3;
     padding: 25px 50px;
     margin-top: 0px;
