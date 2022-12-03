@@ -25,86 +25,121 @@
             </nav>            
         </header>
         <main>
+            
             <div>
                 <img class="products-img" src="images/two-women-in-a-tent-2.jpg" alt="camping image">
             </div>
-            <div class="product-grid">
-                <h1 class="products">Products</h1>
+            <div class="products">
+                <h1>MonkeBandz Products</h1>
                 <p>
-                    Take a look at the different styles. Pick the colors you love. Select the size.
+                    Check out our goods - Pick the colors you love - Select the size.
                 </p>
-                <div class="collar-card">
-                    <h2>Pet Collars</h2>
-                    <img class="collar-img" src="images/dusty_inside.jpg" alt="Image Pet Collar">
-                    <p class="collarz-text">
-                        These pet collars are made of 550 paracord. It is lightweight but extremely sturdy. Your fur babies will be stylish and safe in one of our MonkeBandz collars.
-                    </p>
-                    <button class="collar-button">Colors and Sizes</button>
-                </div>
-                <div class="wristband-card">
-                    <h2>Wristbands & Earrings</h2>
-                    <img class="wristband-img" src="images/dna-earrings-2.jpg" alt="Image earringz">
-                    <p class="wristband-text">
-                        Choose from three styles. The large wristband made from 550 paracord is a chunky fun wristband. If you are looking for a wristband to wear while hiking and camping for survival, this is the right choice. The medium wristband is made from 95 paracord but with more strands. If you're not sure which style, this is a nice middle of the road option. Pick your favorite color combinations. The small wristband is made of the 95 paracord. It is lightweight and petite, perfect for anyone who likes a minimal look. Want more impact? Buy multiple Wristbands and wear them together. The Earrings are delicate and lightweight. Great option for work or a night out. For a fun and casual look, choose some of our vibrant colors.
-                    </p>
-                    <button class="wristband-button">Colors and Sizes</button>
-                </div>
-                <div class="keychain-card">
-                    <h2>Key-chains</h2>
-                    <img class="keychain-img" src="images/keychains-2.jpg" alt="Image keychain">
-                    <p class="keychain-text">
-                        Do you lose your keys? Tired of reaching in your bag and struggling to fish out your keys? The DNA key-chain will give you a hand. They are made of 550 paracord so they are made to last.
-                    </p>
-                      
-                    <div>
-                        <button id="keychain-button">Colors & Styles</button>
+                <div id="card-grid">
+                    <div class="collar-card">
+                        <img src="images/pet_collar.jpg" alt="Image Pet Collar" style="width:100%">
+                        <h1>Pet Collars</h1>
+                        <p class="price">$18</p>
+                        <p>These pet collars are made of 550 paracord. It is lightweight but extremely sturdy. Your fur babies will be stylish and safe in one of our MonkeBandz collars.</p>
+                        <div class="overlay js-overlay" id="overlay-collar" hidden>
+                            <div><img src="images/pet-collar-gallery.jpg" alt="Pet Collars Gallery" ></div>
+                        </div>
+                        <div>
+                            <p><button class="js-overlay-trigger" type="button" value="overlay-collar">Colors & Sizes</button></p>
+                        </div>
                     </div>
-                      
+                    <div class="wristband-card">
+                        <img src="images/wristband-prod.jpg" alt="Image of Wristband" style="width:100%">
+                        <h1>Wristbands</h1>
+                        <p class="price">$10</p>
+                        <p>Pick your favorite color combinations and the size that works for you. Want more impact? Buy multiple Wristbands and wear them together.<p>
+                        <div class="overlay js-overlay" id="overlay-wrist" hidden>
+                            <div><img src="images/wristbands-gallery.jpg" alt="Wristbands Gallery"></div>
+                        </div>
+                        <div>
+                            <p><button class="js-overlay-trigger" type="button" value="overlay-wrist">Colors & Sizes</button></p>
+                        </div>
+                    </div>
+                    <div class="key-card">
+                        <img src="images/keychains-2.jpg" alt="Image keychain" style="width:100%">
+                        <h1>Key-chains</h1>
+                        <p class="price">$6</p>                    
+                        <p>Tired of reaching in your bag or pocket and struggling to fish out your keys? The DNA key-chain will give you a hand. This key-chain is made to last.</p>
+                        <div class="overlay js-overlay" id="overlay-key" hidden>
+                            <div><img src="images/key-chain-gallery.jpg" alt="Key-chain Gallery"></div>
+                        </div>
+                        <div>
+                            <p><button class="js-overlay-trigger" type="button" value="overlay-key">Colors</button></p>
+                        </div>
+                    </div>
+                    <div class="order-form">
+                        <div class="overlay js-overlay" id="overlay-order" hidden>
+                            <div value="text">
+                                <div class="container">
+                                    <form action="action_page.php">
+
+                                      <label for="order">Order Details (Item, Colors, Size, Quantity)</label>
+                                      <textarea id="order" name="orderdetails" placeholder="Your order items.." style="height:200px"></textarea>  
+                                  
+                                      <label for="fname">First Name</label>
+                                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                  
+                                      <label for="lname">Last Name</label>
+                                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                                      <label for="address">Mailing Address</label>
+                                      <input type="text" id="address" name="mailingaddress" placeholder="Your mailing address..">
+
+                                      <label for="city">City</label>
+                                      <input type="text" id="city" name="addresscity" placeholder="Your city..">
+
+                                      <label for="state">State</label>
+                                      <input type="text" id="state" name="addressstate" placeholder="Your state..">
+
+                                      <label for="payment">Payment Amount</label>
+                                      <input type="text" id="payment" name="paymentamount" placeholder="Order Total..">
+                                      
+                                      <label for="venmo">Use Venmo for Payment</label>
+                                      <input type="image" id="venmo" src="images/qrcode_account.venmo.com.png" alt="Venmo QR Code">
+                                 
+                                      <input type="submit" value="Submit">
+                                  
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overlay-button">
+                            <p><button class="js-overlay-trigger" type="button" value="overlay-order">Place Order</button></p> 
+                        </div>
+                    </div>
+                    <script>
+                        const triggers = document.querySelectorAll('.js-overlay-trigger');
+
+                        function showOverlay(event) {
+                            const selector = event.target.value;
+                            const overlay = document.getElementById(selector);
+                            if (overlay !== null) {
+                                overlay.hidden = false;
+                            }
+                        }
+
+                        for (const trigger of triggers) {
+                            trigger.addEventListener('click', showOverlay);
+                        }
+                        
+                        const overlays = document.querySelectorAll('.js-overlay');
+
+                        function closeOverlay(event) {
+                            const overlay = event.currentTarget;
+                            overlay.hidden = true;
+                        }
+
+                        for (const overlay of overlays) {
+                            overlay.addEventListener('click', closeOverlay);
+                        }
+                    </script>
                 </div>
             </div>
-            <div id="order-overlay" onclick="off()">
-                <div id="order-form">
-                    <form action="action_page.php">
-
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                        <label for="item">Item Name</label>
-                        <input type="text" id="item" name="itemname" placeholder="Item Name...">
-
-                        <label for="style">Style</label>
-                        <input type="text" id="style" name="stylename" placeholder="Style..">
-
-                        <label for="size">Size</label>
-                        <input type="text" id="size" name="itemsize" placeholder="Item Size..">
-                    
-                        <label for="instructions">Additional Instructions</label>
-                        <textarea id="instructions" name="additionalinstructions" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                    
-                    </form>
-                </div>
-            </div>
-              
-            <div style="padding:20px">
-                <button onclick="on()">Order Here</button>
-            </div>
-              
-            <script>
-            function on() {
-                document.getElementById("order-overlay").style.display = "block";
-            }
-              
-            function off() {
-                document.getElementById("order-overlay").style.display = "none";
-            }
-            </script>
-        </main>
-            
+        </main>  
         <footer>
             <p>Up A Creek &copy; 2022 - Shannon Feist</p>
             <p><a href="contactus.html">Contact Us</a></p>
