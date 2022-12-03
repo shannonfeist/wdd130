@@ -68,8 +68,9 @@ header nav {
     grid-row: 2/3;
 }
 .intro h1 {
+    width: 100%;
     font-family: 'Merienda', 'san-serif';
-    font-size: 2.25em;
+    font-size: 2em;
     margin-bottom: 0;
     color: #b1f8f2;
     text-shadow: 0 0 4px #134542, 0 0 6px #b2e5e1;
@@ -128,10 +129,10 @@ header nav {
     grid-column: 1/4;
     grid-row: 1/4;
     font-family: 'Merienda', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.25em;
     padding-left: 50px;
     padding-top: 5px;
-    line-height: 2.5em;
+    line-height: 2em;
     border-radius: 15px;
     color: #f6f6f3;
     text-shadow: 0 0 4px #303b21, 0 0 6px #def0c5;
@@ -385,24 +386,40 @@ input[type=text], textarea {
     width: 100%;
    }
    #overlay-collar img {
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
    }
    #overlay-wrist img {
-    top: 90%;
+    top: 83%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
    }
    #overlay-key img {
-    top: 125%;
+    top: 117%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
    }
+   .home-list {
+    font-size: 1em;
+   }
+   .intro h1 {
+    font-size: 1.25em;
+   }
+   .intro-sub {
+    font-size: .75em;
+   }
+   .intro-msg {
+    font-size: .75em;
+   }
+   .products p {
+    font-size: .90em;
+   }
 }
+  
 
 
   /* Start of About Us Page */
