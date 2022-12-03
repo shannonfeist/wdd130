@@ -230,7 +230,7 @@ footer .social img {
   
   .overlay img {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -292,7 +292,7 @@ input[type=text], textarea {
   
   .container {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
