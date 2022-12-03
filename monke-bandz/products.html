@@ -68,45 +68,40 @@
                         </div>
                     </div>
                     <div class="order-form">
-                        <div class="overlay js-overlay" id="overlay-order" hidden>
-                            <div id="text">
-                                <div class="container">
-                                    <form action="action_page.php">
+                        <button id="myBtn">Order Here</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form action="action_page.php" class="form">
+                                    <label for="order">Order Details (Item, Colors, Size, Quantity)</label>
+                                    <textarea id="order" name="orderdetails" placeholder="Your order items.." style="height:200px"></textarea>  
+                                
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                                      <label for="order">Order Details (Item, Colors, Size, Quantity)</label>
-                                      <textarea id="order" name="orderdetails" placeholder="Your order items.." style="height:200px"></textarea>  
-                                  
-                                      <label for="fname">First Name</label>
-                                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                                  
-                                      <label for="lname">Last Name</label>
-                                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                    <label for="address">Mailing Address</label>
+                                    <input type="text" id="address" name="mailingaddress" placeholder="Your mailing address..">
 
-                                      <label for="address">Mailing Address</label>
-                                      <input type="text" id="address" name="mailingaddress" placeholder="Your mailing address..">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="addresscity" placeholder="Your city..">
 
-                                      <label for="city">City</label>
-                                      <input type="text" id="city" name="addresscity" placeholder="Your city..">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="addressstate" placeholder="Your state..">
 
-                                      <label for="state">State</label>
-                                      <input type="text" id="state" name="addressstate" placeholder="Your state..">
-
-                                      <label for="payment">Payment Amount</label>
-                                      <input type="text" id="payment" name="paymentamount" placeholder="Order Total..">
-                                      
-                                      <label for="venmo">Use Venmo for Payment</label>
-                                      <input type="image" id="venmo" src="images/qrcode_account.venmo.com.png" alt="Venmo QR Code">
-                                 
-                                      <input type="submit" value="Submit">
-                                  
-                                    </form>
-                                </div>
+                                    <label for="payment">Payment Amount</label>
+                                    <input type="text" id="payment" name="paymentamount" placeholder="Order Total..">
+                                    
+                                    <label for="venmo">Use Venmo for Payment</label>
+                                    <a id="venmo" href="https://www.venmo.com/u/Christian-Feist-2"><img src="images/qrcode_account.venmo.com.png" alt="Venmo QR Code"></a>
+                                
+                                    <input type="submit" value="Submit">
+                                </form>                                
                             </div>
-                        </div>
-                        <div class="overlay-button">
-                            <p><button class="js-overlay-trigger" type="button" value="overlay-order">Place Order</button></p> 
-                        </div>
-                    </div>
+                        </div>                                            
+
                     <script>
                         const triggers = document.querySelectorAll('.js-overlay-trigger');
 
@@ -133,6 +128,33 @@
                             overlay.addEventListener('click', closeOverlay);
                         }
                     </script>
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                          modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                        </script>
                 </div>
             </div>
         </main>  
