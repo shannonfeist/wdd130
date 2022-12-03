@@ -269,10 +269,12 @@ footer .social img {
 .form label {
     font-family: sans-serif;
     font-size: 20px;
-    font-weight: 900px;
+    font-weight: 600;
     color: #1a1923;
 }
 input[type=text], textarea {
+    font-family: sans-serif;
+    font-size: 18px;
     width: 100%; 
     padding: 12px;  
     border: 1px solid #ccc;
@@ -281,6 +283,7 @@ input[type=text], textarea {
     margin-top: 6px;
     margin-bottom: 16px; 
     resize: vertical
+    
   }
   
   input[type=submit] {
