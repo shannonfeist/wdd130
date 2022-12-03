@@ -267,12 +267,20 @@ footer .social img {
     border: 5px inset #000;
     box-shadow: none;
   }
+.form h3 {
+  font-family: sans-serif;
 
+  font-weight: 600;
+  color: #1a1923;  
+}
 .form label {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 600;
     color: #1a1923;
+}
+.form img {
+  max-width: 200px;
 }
 input[type=text], textarea {
     font-family: sans-serif;
@@ -289,6 +297,7 @@ input[type=text], textarea {
   }
   
   input[type=submit] {
+    width: 100%;
     font-family: sans-serif;
     font-size: 20px;
     background-color: #67794d;
@@ -337,6 +346,7 @@ input[type=text], textarea {
   
   /* Modal Content */
   .modal-content {
+    min-width: 500px;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
