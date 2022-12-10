@@ -420,11 +420,7 @@ input[type=submit]:hover {
 }
 .contact-form {
   grid-column: 2/3;
-  grid-row: 4/5;
-  padding-top: 0;
-  width: 100%;
-  margin-bottom: 100px;
-  
+  grid-row: 4/5;  
 }
 .contact-form button {
   color: #f6f6f3;
